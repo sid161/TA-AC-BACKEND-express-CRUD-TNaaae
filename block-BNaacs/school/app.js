@@ -11,10 +11,10 @@ app.set("view engine", "ejs")
 app.set("views", path.join(__dirname, "views"));
 
 app.get('/',(req,res) => {
-    var user = {name: "sid", age:18}
-    res.render("index", {user:user})
+    // var user = {name: "sid", age:18}
+    res.render("index.ejs")
 })
 
-app.listen(2000,() => {
+app.listen(3000,() => {
     console.log("Server listening on port 2k")
 })
