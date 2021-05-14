@@ -7,9 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Welcome to index Page</h2>
-    <h3><% = student.name %></h3>
-    <h3><% = student.age %></h3>
-    </ul>
+    <form action="/students" method="POST">
+        <input type="text" name="name" placeholder="Add name">
+        <input type="text" name="email" placeholder="add email">
+        <input type="submit" value="Submit"/>
+
+    </form>
 </body>
 </html>

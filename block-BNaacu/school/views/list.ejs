@@ -7,9 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Welcome to index Page</h2>
-    <h3><% = student.name %></h3>
-    <h3><% = student.age %></h3>
-    </ul>
+
+
+   <% list.forEach(e => { %>
+        <h3><%= e %></h3>
+    })
 </body>
 </html>
