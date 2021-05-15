@@ -1,10 +1,10 @@
 var express = require('express');
-const User = require('../models/user');
+const User = require('../models/User');
 
 var router = express.Router();
 
 router.get('/', (req,res) => {
-    res.render('userForm.ejs');
+    
 })
 
 router.post('/', (req,res) => {
@@ -16,7 +16,7 @@ router.post('/', (req,res) => {
 })
 
 router.get('/new', (req,res) => {
-    res.render()
+    res.render('userForm.ejs');
 })
 
 module.exports = router;
